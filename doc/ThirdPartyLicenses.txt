@@ -1,4 +1,4 @@
-The Services Standard Build (SSB) contains software from third parties 
+The Services Standard Deployment (SSD) contains software from third parties 
 covered by various licenses subject to the following additional terms and 
 conditions.  This is in addition to the licenses already documented for
 IdentityIQ.
@@ -11,6 +11,13 @@ Software:
   Antelope Tasks 3.5.3
   Apache Tomcat
   Google Guava 23.0
+  POI 3.17
+    Office Open XML schemas
+  Jakarta Commons Projects
+    Collections 4-4.1
+  XMLBeans 2.6.0
+  xmltask 1.16
+  Java Servlet API
 
                                  Apache License
                            Version 2.0, January 2004
