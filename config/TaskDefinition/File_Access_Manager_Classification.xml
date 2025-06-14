@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TaskDefinition PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<TaskDefinition executor="sailpoint.fam.task.FAMClassificationTask" name="File Access Manager Classification" progressMode="String" resultAction="Delete" subType="task_item_type_classification" template="true" type="Classification">
+   <Description>
+      Aggregate classifications from File Access Manager
+    </Description>
+   <Signature>
+      <Inputs>
+         <Argument defaultValue="Permission" helpKey="help_task_classification_query_type" inputTemplate="/monitor/tasks/argTemplates/famQuerySelect.xhtml" name="queryType" type="String">
+            <Prompt>task_in_fam_classification_query_type</Prompt>
+         </Argument>
+         <Argument filterString="type == Rule.Type.ClassificationCustomization" helpKey="help_task_classification_customization_rule" name="classificationCustomizationRule" type="Rule">
+            <Prompt>task_in_fam_classification_customization_rule</Prompt>
+         </Argument>
+         <Argument filterString="type == Rule.Type.ClassificationFilter" helpKey="help_task_classification_filter_rule" name="classificationFilterRule" type="Rule">
+            <Prompt>task_in_fam_classification_filter_rule</Prompt>
+         </Argument>
+         <Argument helpKey="help_task_fam_classification_description_locale" name="descriptionLocale" type="string">
+            <Prompt>task_in_fam_classification_description_locale</Prompt>
+         </Argument>
+         <Argument helpKey="help_task_classification_page_size" name="pageSize" type="int">
+            <Prompt>task_in_fam_classification_page_size</Prompt>
+         </Argument>
+         <Argument helpKey="help_task_classification_retry_limit" name="retryLimit" type="int">
+            <Prompt>task_in_fam_classification_retry_limit</Prompt>
+         </Argument>
+         <Argument helpKey="help_task_classification_retry_gap" name="retryGap" type="int">
+            <Prompt>task_in_fam_classification_retry_gap</Prompt>
+         </Argument>
+         <Argument helpKey="help_task_classification_max_errors" name="maxErrors" type="int">
+            <Prompt>task_in_fam_classification_max_errors</Prompt>
+         </Argument>
+      </Inputs>
+      <Returns>
+         <Argument name="associationsProcessed" type="int">
+            <Prompt>task_out_fam_associations_processed</Prompt>
+         </Argument>
+         <Argument name="classificationsProcessed" type="int">
+            <Prompt>task_out_fam_classification_processed</Prompt>
+         </Argument>
+         <Argument name="groupsProcessed" type="int">
+            <Prompt>task_out_fam_classification_processed_groups</Prompt>
+         </Argument>
+         <Argument name="classificationsCreated" type="int">
+            <Prompt>task_out_fam_classification_created</Prompt>
+         </Argument>
+         <Argument name="uncorrelatedAssociations" type="int">
+            <Prompt>task_out_fam_classification_uncorrelated</Prompt>
+         </Argument>
+      </Returns>
+   </Signature>
+</TaskDefinition>

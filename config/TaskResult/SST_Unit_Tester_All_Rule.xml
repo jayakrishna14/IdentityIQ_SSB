@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TaskResult PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<TaskResult completed="1749554264031" completionStatus="Success" host="LAKKI" id="c0a87210975912d58197598f778600c8" launched="1749554263932" launcher="spadmin" name="SST Unit Tester All Rule" schedule="6349e2e82a4b49d7961012dfd59990c8" significantModified="1749554264036" type="Generic">
+   <Definition>
+      <Reference class="sailpoint.object.TaskDefinition" name="SST Unit Tester All Rule"/>
+   </Definition>
+   <Owner>
+      <Reference class="sailpoint.object.Identity" name="spadmin"/>
+   </Owner>
+</TaskResult>

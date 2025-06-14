@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE Identity PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Identity lastLogin="1749924174945" name="spadmin" password="1:ACP:SAGs8lVfqhFIPkQjHzmxerxCbE93HP52mpjHpPUAgzQ=" protected="true">
+   <Attributes>
+      <Map>
+         <entry key="displayName" value="The Administrator"/>
+         <entry key="firstname" value="The"/>
+         <entry key="lastname" value="Administrator"/>
+      </Map>
+   </Attributes>
+   <Capabilities>
+      <Reference class="sailpoint.object.Capability" name="SystemAdministrator"/>
+   </Capabilities>
+</Identity>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE EmailTemplate PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<EmailTemplate name="SST Unit Test Report Email">
+   <Body>
+  
+  	&lt;html&gt;
+	&lt;body&gt;
+	&lt;p&gt; 
+  		&lt;h1&gt;SST Unit Tester Report&lt;/h1&gt;
+  		&lt;h2&gt;Summary&lt;/h2&gt;
+  		&lt;table border="1" cellspacing="0" cellpadding="3"&gt;
+	  		&lt;tr&gt;
+		  		&lt;td  style="border: 1pt solid grey; background-color: black; color: white; width: 100px; "&gt;Total Run:&lt;/td&gt;
+		  		&lt;td style="border: 1pt solid grey; width: 100px"&gt;$total&lt;/td&gt;&lt;/tr&gt;
+		  		&lt;tr&gt;&lt;td  style="border: 1pt solid grey; background-color: black; color: white;"&gt;Total Success:&lt;/td&gt;
+		  		&lt;td style="border: 1pt solid grey; width: 100px;background-color: white; color: #0B610B"&gt;$success&lt;/td&gt;&lt;/tr&gt;
+		  		&lt;tr&gt;&lt;td  style="border: 1pt solid grey; background-color: black; color: white;"&gt;Total Failed:&lt;/td&gt;
+		  		&lt;td style="border: 1pt solid grey; width: 100px; background-color: #F2F2F2; color: #B40404"&gt;$failed&lt;/td&gt;
+	  		&lt;/tr&gt;
+  		&lt;/table&gt;
+  		&lt;br&gt;
+  		&lt;h2&gt;Individual Results&lt;/h2&gt;
+  		&lt;table border="1" cellspacing="0" cellpadding="3"&gt;
+  		&lt;tr  style="background-color: black; color: white;"&gt;
+	  		&lt;th style="width: 250px;"&gt;Rule&lt;/th&gt;
+	  		&lt;th style="width: 250px;"&gt;Arg File&lt;/th&gt;
+	  		&lt;th style="width: 250px;"&gt;Use Case&lt;/th&gt;
+	  		&lt;th style="width: 150px;"&gt;Category&lt;/th&gt;
+	  		&lt;th style="width: 150px;"&gt;Status&lt;/th&gt;
+	  		&lt;th style="width: 450px;"&gt;Notes&lt;/th&gt;
+  		&lt;/tr&gt;
+  		
+  		#foreach ($result in $results)
+  			#if ($result.status == "FAILURE")
+  				&lt;tr style="background-color: #F2F2F2; color: #B40404"&gt;
+  			#else
+  				&lt;tr style="background-color: white; color: #0B610B"&gt;
+  			#end
+  			
+				&lt;td&gt;$result.ruleName&lt;/td&gt;
+				&lt;td&gt;$result.argFile&lt;/td&gt;
+				&lt;td&gt;$result.useCase&lt;/td&gt;
+				&lt;td&gt;$result.category&lt;/td&gt;
+				&lt;td&gt;$result.status&lt;/td&gt;
+				&lt;td&gt;$result.message&lt;/td&gt;
+			 &lt;/tr&gt;
+			
+        #end
+        
+        &lt;/table&gt;
+    &lt;/p&gt;
+    &lt;/body&gt;
+    &lt;/html&gt;
+    
+    </Body>
+   <Description>
+      Email Template for reporting on unit test success/failures.
+    </Description>
+   <Signature>
+      <Inputs>
+         <Argument name="results" type="string"/>
+         <Argument name="total" type="int"/>
+         <Argument name="success" type="int"/>
+         <Argument name="failed" type="int"/>
+      </Inputs>
+   </Signature>
+   <Subject>All Unit Tests Report</Subject>
+</EmailTemplate>

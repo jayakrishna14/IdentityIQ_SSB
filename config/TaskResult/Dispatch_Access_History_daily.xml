@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE TaskResult PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<TaskResult completed="1749915588443" completionStatus="Success" host="Krishna" id="c0a8d510976f184781976f18bfe3000e" launched="1749915582300" launcher="System" name="Dispatch Access History daily" partitioned="true" runLength="6" runLengthAverage="16" runLengthDeviation="-62" schedule="Dispatch Access History daily" significantModified="1749915588443" type="System">
+   <Attributes>
+      <Map>
+         <entry key="taskResultPartitions">
+            <value>
+               <List>
+                  <TaskResult completed="1749915587542" completionStatus="Success" host="Krishna" launched="1749915587372" name="Intercepted Delete Processor"/>
+                  <TaskResult completed="1749915588218" completionStatus="Success" host="Krishna" launched="1749915587706" name="Extract Partition Creation">
+                     <Attributes>
+                        <Map>
+                           <entry key="totalObjectMessages">
+                              <value>
+                                 <Integer>0</Integer>
+                              </value>
+                           </entry>
+                        </Map>
+                     </Attributes>
+                  </TaskResult>
+                  <TaskResult completed="1749915588443" completionStatus="Success" host="Krishna" launched="1749915588276" name="Finish Request"/>
+               </List>
+            </value>
+         </entry>
+      </Map>
+   </Attributes>
+   <Definition>
+      <Reference class="sailpoint.object.TaskDefinition" name="Dispatch Access History"/>
+   </Definition>
+   <Owner>
+      <Reference class="sailpoint.object.Identity" name="spadmin"/>
+   </Owner>
+</TaskResult>
