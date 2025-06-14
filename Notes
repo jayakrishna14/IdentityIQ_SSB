@@ -1,0 +1,2 @@
+$env:SPTARGET = "sandbox" -In PowerShell:
+set SPTARGET=dev -In Command Prompt:
