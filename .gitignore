@@ -2,7 +2,7 @@ base/ga/identityiq-8.4.zip
 base/patch/identityiq-8.4p2.jar
 build/
 lib/ext/mysql-connector-java-8.0.28.jar
-config/Rule/Test.java
 lib/commons-logging-1.2.jar
 lib/identityiq.jar
 .vscode/settings.json
+Test.java
