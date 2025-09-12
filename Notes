@@ -1,0 +1,21 @@
+$env:SPTARGET = "sandbox" -In PowerShell:
+set SPTARGET=dev -In Command Prompt:
+build clean main createdb extenddb
+
+Run DB update scripts (like spt_identity column updates).
+
+build extenddb
+
+build import-stock
+
+build import-lcm
+
+build import-ap
+
+build patchdb
+
+build runUpgrade
+
+build import-custom
+
+build cleanWeb

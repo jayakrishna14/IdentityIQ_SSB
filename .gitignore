@@ -6,3 +6,6 @@ lib/ext/mysql-connector-java-8.0.28.jar
 lib/commons-logging-1.2.jar
 .gitignore
 lib/identityiq.jar
+lib/junit-jupiter-api-5.13.1.jar
+lib/mockito-core-5.18.0.jar
+sailpoint/services/standard/reports/TdSODPolicyDetectionDataSource.java
