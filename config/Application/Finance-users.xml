@@ -94,30 +94,14 @@
    </Owner>
    <Schemas>
       <Schema displayAttribute="userName" identityAttribute="employeeId" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None" significantModified="1752218398562">
-         <AttributeDefinition name="employeeId" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="dbId" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="app2_privileged" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="acct_lastLogin" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="app2_service" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="app2_inactive" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="groupmbr" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="userName" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="employeeId" type="string"/>
+         <AttributeDefinition name="dbId" type="string"/>
+         <AttributeDefinition name="app2_privileged" type="string"/>
+         <AttributeDefinition name="acct_lastLogin" type="string"/>
+         <AttributeDefinition name="app2_service" type="string"/>
+         <AttributeDefinition name="app2_inactive" type="string"/>
+         <AttributeDefinition name="groupmbr" type="string"/>
+         <AttributeDefinition name="userName" type="string"/>
       </Schema>
    </Schemas>
    <ApplicationScorecard significantModified="1752218398562"/>

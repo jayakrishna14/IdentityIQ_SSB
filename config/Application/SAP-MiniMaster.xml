@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Application connector="sailpoint.connector.JDBCConnector" featuresString="DISCOVER_SCHEMA, PROVISIONING, SYNC_PROVISIONING, DIRECT_PERMISSIONS, SEARCH, ENABLE, UNLOCK" icon="databaseIcon" name="SAP-MiniMaster" profileClass="" significantModified="1755831716404" type="JDBC">
+<Application connector="sailpoint.connector.JDBCConnector" featuresString="DISCOVER_SCHEMA, PROVISIONING, SYNC_PROVISIONING, DIRECT_PERMISSIONS, SEARCH, ENABLE, UNLOCK" icon="databaseIcon" name="SAP-MiniMaster" profileClass="" significantModified="1758083227933" type="JDBC">
    <AccountCorrelationConfig>
       <Reference class="sailpoint.object.CorrelationConfig" name="sap-minimaster"/>
    </AccountCorrelationConfig>
@@ -120,7 +120,7 @@
             </value>
          </entry>
          <entry key="partitionStatements"/>
-         <entry key="password" value="1:ACP:dQfNB+w4nAGcQiivS65nNXZld0cprYPWNDjKXrWnLuo="/>
+         <entry key="password" value="1:ACP:UabegtzGYpUImM0f5iZH4LFIjiuh65XvArao5E/nMp8="/>
          <entry key="provisionRule" value="globalRule"/>
          <entry key="sysDescriptions">
             <value>
@@ -173,56 +173,64 @@
    <Owner>
       <Reference class="sailpoint.object.Identity" name="100 METRI"/>
    </Owner>
+   <ProvisioningForms>
+      <Form name="SAP_JDBC_ProvisioningPolicy" objectType="account" type="Create">
+         <Attributes>
+            <Map>
+               <entry key="pageTitle" value="SAP_JDBC_ProvisioningPolicy"/>
+            </Map>
+         </Attributes>
+         <Description>SAP_JDBC_ProvisioningPolicy</Description>
+         <Section name="PlanCheck">
+            <Field displayName="group_id" name="group_id" type="string">
+               <RuleRef>
+                  <Reference class="sailpoint.object.Rule" name="SAP_JDBC_FieldValue"/>
+               </RuleRef>
+            </Field>
+            <Field displayName="user_id" helpKey="user_id" name="user_id" type="string" value="12345667"/>
+         </Section>
+      </Form>
+      <Form name="SAP_JDBC_ProvisioningPolicy-Modify" objectType="account" type="Update">
+         <Attributes>
+            <Map>
+               <entry key="pageTitle" value="SAP_JDBC_ProvisioningPolicy-Modify"/>
+            </Map>
+         </Attributes>
+         <Description>Modify</Description>
+         <Section name="Section 1">
+            <Field name="group_id" type="string">
+               <Script>
+                  <Source><![CDATA[ 
+              if( accountRequest != null && accountRequest.getAttributeRequest("group_id") != null) {
+                 log.error(" ENTERING accountRequest Modify");
+              }
+              return "123";
+            ]]></Source>
+               </Script>
+            </Field>
+         </Section>
+      </Form>
+   </ProvisioningForms>
    <Schemas>
-      <Schema displayAttribute="name" identityAttribute="user_id" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None" significantModified="1755831716404">
-         <AttributeDefinition name="user_id" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="name" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="given_name" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="surname" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="department" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="employee_id" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="email" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="network_id" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="manager" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="inactive_identity" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="last_logon" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="entitlements" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition entitlement="true" managed="true" multi="true" name="group_id" schemaObjectType="Entitlements" type="string">
-            <Description/>
-         </AttributeDefinition>
+      <Schema displayAttribute="name" identityAttribute="user_id" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None" significantModified="1758083227934">
+         <AttributeDefinition name="user_id" type="string"/>
+         <AttributeDefinition name="name" type="string"/>
+         <AttributeDefinition name="given_name" type="string"/>
+         <AttributeDefinition name="surname" type="string"/>
+         <AttributeDefinition name="department" type="string"/>
+         <AttributeDefinition name="employee_id" type="string"/>
+         <AttributeDefinition name="email" type="string"/>
+         <AttributeDefinition name="network_id" type="string"/>
+         <AttributeDefinition name="manager" type="string"/>
+         <AttributeDefinition name="inactive_identity" type="string"/>
+         <AttributeDefinition name="last_logon" type="string"/>
+         <AttributeDefinition name="entitlements" type="string"/>
+         <AttributeDefinition entitlement="true" managed="true" multi="true" name="group_id" schemaObjectType="Entitlements" type="string"/>
       </Schema>
-      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="" identityAttribute="" instanceAttribute="" nativeObjectType="Entitlements" objectType="Entitlements" permissionsRemediationModificationType="None" significantModified="1755831716406">
-         <AttributeDefinition name="group_id" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="group_name" type="string">
-            <Description/>
-         </AttributeDefinition>
+      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="" identityAttribute="" instanceAttribute="" nativeObjectType="Entitlements" objectType="Entitlements" permissionsRemediationModificationType="None" significantModified="1758083227934">
+         <AttributeDefinition name="group_id" type="string"/>
+         <AttributeDefinition name="group_name" type="string"/>
       </Schema>
    </Schemas>
-   <ApplicationScorecard significantModified="1755831716404"/>
+   <ApplicationScorecard significantModified="1758083227934"/>
 </Application>

@@ -106,42 +106,18 @@
    </ProvisioningForms>
    <Schemas>
       <Schema displayAttribute="fullName" identityAttribute="email" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None" significantModified="1753888307075">
-         <AttributeDefinition name="employeeId" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="firstName" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="lastName" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="managerId" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="fullName" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="email" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="department" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="region" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="location" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="inactiveIdentity" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="jobtitle" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="costcenter" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="employeeId" type="string"/>
+         <AttributeDefinition name="firstName" type="string"/>
+         <AttributeDefinition name="lastName" type="string"/>
+         <AttributeDefinition name="managerId" type="string"/>
+         <AttributeDefinition name="fullName" type="string"/>
+         <AttributeDefinition name="email" type="string"/>
+         <AttributeDefinition name="department" type="string"/>
+         <AttributeDefinition name="region" type="string"/>
+         <AttributeDefinition name="location" type="string"/>
+         <AttributeDefinition name="inactiveIdentity" type="string"/>
+         <AttributeDefinition name="jobtitle" type="string"/>
+         <AttributeDefinition name="costcenter" type="string"/>
       </Schema>
    </Schemas>
    <ApplicationScorecard significantModified="1753888307075"/>

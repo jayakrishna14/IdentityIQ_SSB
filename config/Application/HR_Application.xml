@@ -94,36 +94,16 @@
    </Owner>
    <Schemas>
       <Schema displayAttribute="Name" identityAttribute="EmailAddress" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
-         <AttributeDefinition name="Name" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="GivenName" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="Surname" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="Department" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="EmployeeID" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="EmailAddress" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="NetworkID" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="manager" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="inactiveIdentity" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="lastLogon" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="Name" type="string"/>
+         <AttributeDefinition name="GivenName" type="string"/>
+         <AttributeDefinition name="Surname" type="string"/>
+         <AttributeDefinition name="Department" type="string"/>
+         <AttributeDefinition name="EmployeeID" type="string"/>
+         <AttributeDefinition name="EmailAddress" type="string"/>
+         <AttributeDefinition name="NetworkID" type="string"/>
+         <AttributeDefinition name="manager" type="string"/>
+         <AttributeDefinition name="inactiveIdentity" type="string"/>
+         <AttributeDefinition name="lastLogon" type="string"/>
       </Schema>
    </Schemas>
    <ApplicationScorecard significantModified="1752218062296"/>

@@ -364,135 +364,57 @@
    </ProvisioningForms>
    <Schemas>
       <Schema displayAttribute="FIRST_NAME" identityAttribute="USER_ID" instanceAttribute="USER_PK" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="Select" significantModified="1753889150263">
-         <AttributeDefinition name="USER_PK" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="LAST_NAME" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="FIRST_NAME" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="USER_ID" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition entitlement="true" managed="true" multi="true" name="USER_GROUP_NAME" schemaObjectType="Group" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="ACTIVE_FLAG" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="NEW_HIRE_FLAG" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="USER_LANGUAGE" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="EMAIL" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="TELEPHONE" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="EXTENSION" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="HAND_HELD_USER_ID" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="HAND_HELD_ACTIVE_FLAG" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="TEAMWORX_FLAG" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition entitlement="true" managed="true" multi="true" name="LOCATION_CODE" schemaObjectType="Location" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition entitlement="true" managed="true" multi="true" name="MARKET_NAME" schemaObjectType="Market" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition entitlement="true" managed="true" multi="true" name="HIERARCHY_TYPE" schemaObjectType="Hierarchy" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition entitlement="true" managed="true" multi="true" name="LOGICAL_NAME" schemaObjectType="Logical Name" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="CONSOLIDATED_DASHBOARD_FLAG" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="LIMIT_EXPORT_LOCATIONS_FLAG" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition entitlement="true" managed="true" multi="true" name="CONCEPT_CODE" schemaObjectType="Concept" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="BIZIQ_ACCESS_LEVEL" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="USER_PK" type="string"/>
+         <AttributeDefinition name="LAST_NAME" type="string"/>
+         <AttributeDefinition name="FIRST_NAME" type="string"/>
+         <AttributeDefinition name="USER_ID" type="string"/>
+         <AttributeDefinition entitlement="true" managed="true" multi="true" name="USER_GROUP_NAME" schemaObjectType="Group" type="string"/>
+         <AttributeDefinition name="ACTIVE_FLAG" type="string"/>
+         <AttributeDefinition name="NEW_HIRE_FLAG" type="string"/>
+         <AttributeDefinition name="USER_LANGUAGE" type="string"/>
+         <AttributeDefinition name="EMAIL" type="string"/>
+         <AttributeDefinition name="TELEPHONE" type="string"/>
+         <AttributeDefinition name="EXTENSION" type="string"/>
+         <AttributeDefinition name="HAND_HELD_USER_ID" type="string"/>
+         <AttributeDefinition name="HAND_HELD_ACTIVE_FLAG" type="string"/>
+         <AttributeDefinition name="TEAMWORX_FLAG" type="string"/>
+         <AttributeDefinition entitlement="true" managed="true" multi="true" name="LOCATION_CODE" schemaObjectType="Location" type="string"/>
+         <AttributeDefinition entitlement="true" managed="true" multi="true" name="MARKET_NAME" schemaObjectType="Market" type="string"/>
+         <AttributeDefinition entitlement="true" managed="true" multi="true" name="HIERARCHY_TYPE" schemaObjectType="Hierarchy" type="string"/>
+         <AttributeDefinition entitlement="true" managed="true" multi="true" name="LOGICAL_NAME" schemaObjectType="Logical Name" type="string"/>
+         <AttributeDefinition name="CONSOLIDATED_DASHBOARD_FLAG" type="string"/>
+         <AttributeDefinition name="LIMIT_EXPORT_LOCATIONS_FLAG" type="string"/>
+         <AttributeDefinition entitlement="true" managed="true" multi="true" name="CONCEPT_CODE" schemaObjectType="Concept" type="string"/>
+         <AttributeDefinition name="BIZIQ_ACCESS_LEVEL" type="string"/>
       </Schema>
       <Schema aggregationType="group" descriptionAttribute="" displayAttribute="CONCEPT_CODE" identityAttribute="CONCEPT_CODE" instanceAttribute="" nativeObjectType="Concept" objectType="Concept" permissionsRemediationModificationType="None" significantModified="1753889150263">
-         <AttributeDefinition name="CONCEPT_CODE" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="MARKET_NAME" schemaObjectType="Market" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="CONCEPT_CODE" type="string"/>
+         <AttributeDefinition name="MARKET_NAME" schemaObjectType="Market" type="string"/>
       </Schema>
       <Schema aggregationType="group" descriptionAttribute="" displayAttribute="USER_GROUP_NAME" identityAttribute="USER_GROUP_PK" instanceAttribute="" nativeObjectType="Group" objectType="Group" permissionsRemediationModificationType="None" significantModified="1753889150263">
-         <AttributeDefinition name="USER_GROUP_PK" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="USER_GROUP_NAME" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="USER_GROUP_PK" type="string"/>
+         <AttributeDefinition name="USER_GROUP_NAME" type="string"/>
       </Schema>
       <Schema aggregationType="group" descriptionAttribute="" displayAttribute="HIERARCHY_TYPE" identityAttribute="HIERARCHY_TYPE" instanceAttribute="" nativeObjectType="Hierarchy" objectType="Hierarchy" permissionsRemediationModificationType="None" significantModified="1753889150263">
-         <AttributeDefinition name="HIERARCHY_PK" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="HIERARCHY_TYPE" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="HIERARCHY_PK" type="string"/>
+         <AttributeDefinition name="HIERARCHY_TYPE" type="string"/>
       </Schema>
       <Schema aggregationType="group" descriptionAttribute="" displayAttribute="LOGICAL_NAME" identityAttribute="LOGICAL_NAME" instanceAttribute="" nativeObjectType="" objectType="Logical Name" permissionsRemediationModificationType="None" significantModified="1753889150263">
-         <AttributeDefinition name="HIERARCHY_TYPE" schemaObjectType="Hierarchy" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="LOGICAL_NAME" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="ROLE" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="HIERARCHY_TYPE" schemaObjectType="Hierarchy" type="string"/>
+         <AttributeDefinition name="LOGICAL_NAME" type="string"/>
+         <AttributeDefinition name="ROLE" type="string"/>
       </Schema>
       <Schema aggregationType="group" descriptionAttribute="" displayAttribute="MARKET_NAME" identityAttribute="MARKET_NAME" instanceAttribute="" nativeObjectType="Market" objectType="Market" permissionsRemediationModificationType="None" significantModified="1753889150263">
-         <AttributeDefinition name="MARKET_PK" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="MARKET_NAME" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="MARKET_PK" type="string"/>
+         <AttributeDefinition name="MARKET_NAME" type="string"/>
       </Schema>
       <Schema aggregationType="group" descriptionAttribute="" displayAttribute="LOCATION_NAME" identityAttribute="LOCATION_CODE" instanceAttribute="" nativeObjectType="Location" objectType="Location" permissionsRemediationModificationType="None" significantModified="1753889150263">
-         <AttributeDefinition name="COUNTRY_NAME" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="MARKET_NAME" schemaObjectType="Market" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="CONCEPT_NAME" schemaObjectType="Concept" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="LOCATION_CODE" schemaObjectType="Location" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="LOCATION_NAME" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="LOCATION_ACTIVE" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="COUNTRY_NAME" type="string"/>
+         <AttributeDefinition name="MARKET_NAME" schemaObjectType="Market" type="string"/>
+         <AttributeDefinition name="CONCEPT_NAME" schemaObjectType="Concept" type="string"/>
+         <AttributeDefinition name="LOCATION_CODE" schemaObjectType="Location" type="string"/>
+         <AttributeDefinition name="LOCATION_NAME" type="string"/>
+         <AttributeDefinition name="LOCATION_ACTIVE" type="string"/>
       </Schema>
    </Schemas>
    <ApplicationScorecard significantModified="1753889150263"/>

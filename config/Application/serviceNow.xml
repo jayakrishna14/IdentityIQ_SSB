@@ -94,24 +94,12 @@
    </Owner>
    <Schemas>
       <Schema displayAttribute="user_name" identityAttribute="user_name" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None" significantModified="1753463162944">
-         <AttributeDefinition name="user_name" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="name" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="email" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="active" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="sys_created_on" type="string">
-            <Description/>
-         </AttributeDefinition>
-         <AttributeDefinition name="sys_updated_on" type="string">
-            <Description/>
-         </AttributeDefinition>
+         <AttributeDefinition name="user_name" type="string"/>
+         <AttributeDefinition name="name" type="string"/>
+         <AttributeDefinition name="email" type="string"/>
+         <AttributeDefinition name="active" type="string"/>
+         <AttributeDefinition name="sys_created_on" type="string"/>
+         <AttributeDefinition name="sys_updated_on" type="string"/>
       </Schema>
    </Schemas>
    <ApplicationScorecard significantModified="1753463162944"/>
