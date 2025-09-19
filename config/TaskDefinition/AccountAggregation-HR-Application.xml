@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE TaskDefinition PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<TaskDefinition formPath="/monitor/tasks/accountAggregationTask.xhtml" name="AccountAggregation-HR-Application" resultAction="Delete" significantModified="1755535192237" subType="task_item_type_acct_aggregation" type="AccountAggregation">
+<TaskDefinition formPath="/monitor/tasks/accountAggregationTask.xhtml" name="AccountAggregation-%%HR_APP_NAME%%" resultAction="Delete" significantModified="1755535192237" subType="task_item_type_acct_aggregation" type="AccountAggregation">
    <Attributes>
       <Map>
          <entry key="TaskDefinition.runLengthAverage" value="63"/>
          <entry key="TaskDefinition.runLengthTotal" value="63"/>
          <entry key="TaskDefinition.runs" value="1"/>
          <entry key="TaskSchedule.host"/>
-         <entry key="applications" value="Crunch_Time, serviceNow, HR_Application, SAP-AD, AdHocEmployees, AuthContractors, Finance-users, SAP-MiniMaster"/>
+         <entry key="applications" value="Crunch_Time, serviceNow, %%HR_APP_NAME%%, AdHocEmployees, AuthContractors, Finance-users, SAP-MiniMaster"/>
          <entry key="checkDeleted" value="true"/>
          <entry key="checkHistory" value="false"/>
          <entry key="checkPolicies" value="false"/>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Application connector="sailpoint.connector.ADLDAPConnector" featuresString="PROVISIONING, SYNC_PROVISIONING, AUTHENTICATE, MANAGER_LOOKUP, SEARCH, UNSTRUCTURED_TARGETS, UNLOCK, ENABLE, PASSWORD, CURRENT_PASSWORD" icon="directory1Icon" name="SAP-AD" profileClass="" significantModified="1755537361625" type="Active Directory - Direct">
+<Application connector="sailpoint.connector.ADLDAPConnector" featuresString="PROVISIONING, SYNC_PROVISIONING, AUTHENTICATE, MANAGER_LOOKUP, SEARCH, UNSTRUCTURED_TARGETS, UNLOCK, ENABLE, PASSWORD, CURRENT_PASSWORD" icon="directory1Icon" name="%%MAQ_AD_APP_NAME%%" profileClass="" significantModified="1758279635543" type="Active Directory - Direct">
    <Attributes>
       <Map>
          <entry key="ADAppVersion" value="V2"/>
@@ -60,24 +60,30 @@
                   <Map>
                      <entry key="authenticationType" value="simple"/>
                      <entry key="authorizationType" value="simple"/>
-                     <entry key="domainDN" value="DC=ADForest,DC=com"/>
+                     <entry key="domainDN" value="DC=maquarie,DC=com"/>
                      <entry key="domainIterateSearchFilter"/>
-                     <entry key="domainNetBiosName"/>
+                     <entry key="domainNetBiosName" value="%%AD_SERVER_IP%%"/>
                      <entry key="enablePasswordLessAuthenticationForDomain">
                         <value>
                            <Boolean/>
                         </value>
                      </entry>
-                     <entry key="forestName" value="ADForest.com"/>
-                     <entry key="password" value="1:ACP:lSpjD80FU/R1w4RyfFIaUfN8TUDj8kYWQvVbJ6cKhO0="/>
+                     <entry key="forestName" value="%%MAQ_AD_FOREST_NAME%%"/>
+                     <entry key="password" value="%%MAQ_AD_PASSWORD%%"/>
                      <entry key="port" value="389"/>
-                     <entry key="servers"/>
+                     <entry key="servers">
+                        <value>
+                           <List>
+                              <String>%%AD_SERVER_IP%%</String>
+                           </List>
+                        </value>
+                     </entry>
                      <entry key="useSSL">
                         <value>
                            <Boolean/>
                         </value>
                      </entry>
-                     <entry key="user" value="AD-NetBIOS\Administrator"/>
+                     <entry key="user" value="%%MAQ_AD_USER%%"/>
                   </Map>
                </List>
             </value>
@@ -99,8 +105,8 @@
                            <Boolean/>
                         </value>
                      </entry>
-                     <entry key="forestName" value="ADForest.com"/>
-                     <entry key="gcServer" value="192.168.86.100:3268"/>
+                     <entry key="forestName" value="%%MAQ_AD_FOREST_NAME%%"/>
+                     <entry key="gcServer" value="%%AD_SERVER_IP%%:3268"/>
                      <entry key="isResourceForest">
                         <value>
                            <Boolean/>
@@ -111,14 +117,14 @@
                            <Boolean/>
                         </value>
                      </entry>
-                     <entry key="password" value="1:ACP:ogRJ38fubkDmEZ0kzBdKb93u/NsT2vagH3JZkN6T1ik="/>
+                     <entry key="password" value="%%MAQ_AD_PASSWORD%%"/>
                      <entry key="useGroupMembershipPreloading"/>
                      <entry key="useSSL">
                         <value>
                            <Boolean/>
                         </value>
                      </entry>
-                     <entry key="user" value="AD-NetBIOS\Administrator"/>
+                     <entry key="user" value="%%MAQ_AD_USER%%"/>
                   </Map>
                </List>
             </value>
@@ -128,7 +134,7 @@
                <List>
                   <Map>
                      <entry key="iterateSearchFilter"/>
-                     <entry key="searchDN" value="OU=SP_groups,OU=Sailpoint_App,DC=ADForest,DC=com"/>
+                     <entry key="searchDN" value="%%MAQ_AD_GROUP_SEARCH_DN%%"/>
                      <entry key="searchScope" value="SUBTREE"/>
                   </Map>
                </List>
@@ -169,7 +175,7 @@
                      <entry key="groupMembershipSearchDN"/>
                      <entry key="iterateSearchFilter"/>
                      <entry key="primaryGroupSearchDN"/>
-                     <entry key="searchDN" value="OU=SP_users,OU=Sailpoint_App,DC=ADForest,DC=com"/>
+                     <entry key="searchDN" value="%%MAQ_AD_USER_SEARCH_DN%%"/>
                      <entry key="searchScope" value="SUBTREE"/>
                   </Map>
                </List>
@@ -466,7 +472,7 @@
       </Form>
    </ProvisioningForms>
    <Schemas>
-      <Schema displayAttribute="msDS-PrincipalName" identityAttribute="distinguishedName" instanceAttribute="" nativeObjectType="User" objectType="account" significantModified="1755537361626">
+      <Schema displayAttribute="msDS-PrincipalName" identityAttribute="distinguishedName" instanceAttribute="" nativeObjectType="User" objectType="account" significantModified="1758279635543">
          <AttributeDefinition name="businessCategory" type="string">
             <Description>business category</Description>
          </AttributeDefinition>
@@ -696,7 +702,7 @@
             <Description>Name of the entity in the format "NetBIOS domain name\sAMAccountName"</Description>
          </AttributeDefinition>
       </Schema>
-      <Schema descriptionAttribute="" displayAttribute="msDS-PrincipalName" featuresString="PROVISIONING, GROUPS_HAVE_MEMBERS" hierarchyAttribute="memberOf" identityAttribute="distinguishedName" instanceAttribute="" nativeObjectType="Group" objectType="group" significantModified="1755537361626">
+      <Schema descriptionAttribute="" displayAttribute="msDS-PrincipalName" featuresString="PROVISIONING, GROUPS_HAVE_MEMBERS" hierarchyAttribute="memberOf" identityAttribute="distinguishedName" instanceAttribute="" nativeObjectType="Group" objectType="group" significantModified="1758279635543">
          <AttributeDefinition name="cn" type="string">
             <Description>common name(s) for which the entity is known by</Description>
          </AttributeDefinition>
@@ -740,5 +746,5 @@
          </Attributes>
       </Schema>
    </Schemas>
-   <ApplicationScorecard significantModified="1755537361625"/>
+   <ApplicationScorecard significantModified="1758279635543"/>
 </Application>
