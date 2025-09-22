@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Application connector="sailpoint.connector.JDBCConnector" featuresString="DISCOVER_SCHEMA, PROVISIONING, SYNC_PROVISIONING, DIRECT_PERMISSIONS, SEARCH, ENABLE, UNLOCK" icon="databaseIcon" name="SAP-MiniMaster" profileClass="" significantModified="1758083227933" type="JDBC">
+<Application connector="sailpoint.connector.JDBCConnector" featuresString="DISCOVER_SCHEMA, PROVISIONING, SYNC_PROVISIONING, DIRECT_PERMISSIONS, SEARCH, ENABLE, UNLOCK" icon="databaseIcon" name="%%SAP_MINI_MASTER_APP_NAME%%" profileClass="" type="JDBC">
    <AccountCorrelationConfig>
-      <Reference class="sailpoint.object.CorrelationConfig" name="sap-minimaster"/>
+      <Reference class="sailpoint.object.CorrelationConfig" name="%%CORRELATION_CONFIG_SAP_MINI_MASTER%%"/>
    </AccountCorrelationConfig>
    <Attributes>
       <Map>
@@ -56,16 +56,6 @@
          </entry>
          <entry key="Entitlements.user" value="root"/>
          <entry key="SQL" value="SELECT * FROM sap_hr.users;"/>
-         <entry key="acctAggregationEnd">
-            <value>
-               <Date>1755535730051</Date>
-            </value>
-         </entry>
-         <entry key="acctAggregationStart">
-            <value>
-               <Date>1755535710300</Date>
-            </value>
-         </entry>
          <entry key="afterProvisioningRule"/>
          <entry key="aggregationMode">
             <value>
@@ -171,7 +161,7 @@
       </Map>
    </Attributes>
    <Owner>
-      <Reference class="sailpoint.object.Identity" name="100 METRI"/>
+      <Reference class="sailpoint.object.Identity" name="spadmin"/>
    </Owner>
    <ProvisioningForms>
       <Form name="SAP_JDBC_ProvisioningPolicy" objectType="account" type="Create">
@@ -200,19 +190,21 @@
          <Section name="Section 1">
             <Field name="group_id" type="string">
                <Script>
-                  <Source><![CDATA[ 
-              if( accountRequest != null && accountRequest.getAttributeRequest("group_id") != null) {
-                 log.error(" ENTERING accountRequest Modify");
-              }
-              return "123";
-            ]]></Source>
+                  <Source>
+                  <![CDATA[ 
+                    if( accountRequest != null && accountRequest.getAttributeRequest("group_id") != null) {
+                       log.error(" ENTERING accountRequest Modify");
+                    }
+                   return "123";
+                  ]]>
+                 </Source>
                </Script>
             </Field>
          </Section>
       </Form>
    </ProvisioningForms>
    <Schemas>
-      <Schema displayAttribute="name" identityAttribute="user_id" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None" significantModified="1758083227934">
+      <Schema displayAttribute="name" identityAttribute="user_id" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None">
          <AttributeDefinition name="user_id" type="string"/>
          <AttributeDefinition name="name" type="string"/>
          <AttributeDefinition name="given_name" type="string"/>
@@ -227,10 +219,10 @@
          <AttributeDefinition name="entitlements" type="string"/>
          <AttributeDefinition entitlement="true" managed="true" multi="true" name="group_id" schemaObjectType="Entitlements" type="string"/>
       </Schema>
-      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="" identityAttribute="" instanceAttribute="" nativeObjectType="Entitlements" objectType="Entitlements" permissionsRemediationModificationType="None" significantModified="1758083227934">
+      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="" identityAttribute="" instanceAttribute="" nativeObjectType="Entitlements" objectType="Entitlements" permissionsRemediationModificationType="None">
          <AttributeDefinition name="group_id" type="string"/>
          <AttributeDefinition name="group_name" type="string"/>
       </Schema>
    </Schemas>
-   <ApplicationScorecard significantModified="1758083227934"/>
+   <ApplicationScorecard/>
 </Application>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Application authoritative="true" connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Crunch_Time" profileClass="" significantModified="1755535246045" type="DelimitedFile">
+<Application authoritative="true" connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="%%CRUNCH_TIME_APP_NAME%%" profileClass=""  type="DelimitedFile">
    <Attributes>
       <Map>
          <entry key="Concept.columnNames"/>
          <entry key="Concept.commentCharacter"/>
          <entry key="Concept.delimiter" value=","/>
-         <entry key="Concept.file" value="D:\csv_FIles\CrunchTime\Concept.csv"/>
+         <entry key="Concept.file" value="%%CRUNCH_TIME_CONCEPT_FILE_PATH%%"/>
          <entry key="Concept.fileEncoding"/>
          <entry key="Concept.filterEmptyRecords">
             <value>
@@ -46,7 +46,7 @@
          <entry key="Group.columnNames"/>
          <entry key="Group.commentCharacter"/>
          <entry key="Group.delimiter" value=","/>
-         <entry key="Group.file" value="D:\csv_FIles\CrunchTime\Group.csv"/>
+         <entry key="Group.file" value="%%CRUNCH_TIME_GROUP_FILE_PATH%%"/>
          <entry key="Group.fileEncoding"/>
          <entry key="Group.filterEmptyRecords">
             <value>
@@ -86,7 +86,7 @@
          <entry key="Hierarchy.columnNames"/>
          <entry key="Hierarchy.commentCharacter"/>
          <entry key="Hierarchy.delimiter" value=","/>
-         <entry key="Hierarchy.file" value="D:\csv_FIles\CrunchTime\Hierarchy.csv"/>
+         <entry key="Hierarchy.file" value="%%CRUNCH_TIME_HIERARCHY_FILE_PATH%%"/>
          <entry key="Hierarchy.fileEncoding"/>
          <entry key="Hierarchy.filterEmptyRecords">
             <value>
@@ -126,7 +126,7 @@
          <entry key="Location.columnNames"/>
          <entry key="Location.commentCharacter"/>
          <entry key="Location.delimiter" value=","/>
-         <entry key="Location.file" value="D:\csv_FIles\CrunchTime\Location.csv"/>
+         <entry key="Location.file" value="%%CRUNCH_TIME_LOCATION_FILE_PATH%%"/>
          <entry key="Location.fileEncoding"/>
          <entry key="Location.filterEmptyRecords">
             <value>
@@ -166,7 +166,7 @@
          <entry key="Logical Name.columnNames"/>
          <entry key="Logical Name.commentCharacter"/>
          <entry key="Logical Name.delimiter" value=","/>
-         <entry key="Logical Name.file" value="D:\csv_FIles\CrunchTime\Logical Name.csv"/>
+         <entry key="Logical Name.file" value="%%CRUNCH_TIME_LOGICAL_NAME_FILE_PATH%%"/>
          <entry key="Logical Name.fileEncoding"/>
          <entry key="Logical Name.filterEmptyRecords">
             <value>
@@ -206,7 +206,7 @@
          <entry key="Market.columnNames"/>
          <entry key="Market.commentCharacter"/>
          <entry key="Market.delimiter" value=","/>
-         <entry key="Market.file" value="D:\csv_FIles\CrunchTime\Market.csv"/>
+         <entry key="Market.file" value="%%CRUNCH_TIME_MARKET_FILE_PATH%%"/>
          <entry key="Market.fileEncoding"/>
          <entry key="Market.filterEmptyRecords">
             <value>
@@ -263,10 +263,10 @@
          </entry>
          <entry key="aggregationType" value="account"/>
          <entry key="beforeProvisioningRule"/>
-         <entry key="buildMapRule" value="CrunchTime-BuildMap Rule"/>
+         <entry key="buildMapRule" value="%%CRUNCH_TIME_BUILD_MAP_RULE%%"/>
          <entry key="compositeDefinition"/>
          <entry key="delimiter" value=","/>
-         <entry key="file" value="D:\csv_FIles\CrunchTime\Application Users_new.csv"/>
+         <entry key="file" value="%%CRUNCH_TIME_APPLICATION_USERS_FILE_PATH%%"/>
          <entry key="filetransport" value="local"/>
          <entry key="filterEmptyRecords">
             <value>
@@ -363,7 +363,7 @@
       </Form>
    </ProvisioningForms>
    <Schemas>
-      <Schema displayAttribute="FIRST_NAME" identityAttribute="USER_ID" instanceAttribute="USER_PK" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="Select" significantModified="1753889150263">
+      <Schema displayAttribute="FIRST_NAME" identityAttribute="USER_ID" instanceAttribute="USER_PK" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="Select">
          <AttributeDefinition name="USER_PK" type="string"/>
          <AttributeDefinition name="LAST_NAME" type="string"/>
          <AttributeDefinition name="FIRST_NAME" type="string"/>
@@ -387,28 +387,28 @@
          <AttributeDefinition entitlement="true" managed="true" multi="true" name="CONCEPT_CODE" schemaObjectType="Concept" type="string"/>
          <AttributeDefinition name="BIZIQ_ACCESS_LEVEL" type="string"/>
       </Schema>
-      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="CONCEPT_CODE" identityAttribute="CONCEPT_CODE" instanceAttribute="" nativeObjectType="Concept" objectType="Concept" permissionsRemediationModificationType="None" significantModified="1753889150263">
+      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="CONCEPT_CODE" identityAttribute="CONCEPT_CODE" instanceAttribute="" nativeObjectType="Concept" objectType="Concept" permissionsRemediationModificationType="None">
          <AttributeDefinition name="CONCEPT_CODE" type="string"/>
          <AttributeDefinition name="MARKET_NAME" schemaObjectType="Market" type="string"/>
       </Schema>
-      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="USER_GROUP_NAME" identityAttribute="USER_GROUP_PK" instanceAttribute="" nativeObjectType="Group" objectType="Group" permissionsRemediationModificationType="None" significantModified="1753889150263">
+      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="USER_GROUP_NAME" identityAttribute="USER_GROUP_PK" instanceAttribute="" nativeObjectType="Group" objectType="Group" permissionsRemediationModificationType="None">
          <AttributeDefinition name="USER_GROUP_PK" type="string"/>
          <AttributeDefinition name="USER_GROUP_NAME" type="string"/>
       </Schema>
-      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="HIERARCHY_TYPE" identityAttribute="HIERARCHY_TYPE" instanceAttribute="" nativeObjectType="Hierarchy" objectType="Hierarchy" permissionsRemediationModificationType="None" significantModified="1753889150263">
+      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="HIERARCHY_TYPE" identityAttribute="HIERARCHY_TYPE" instanceAttribute="" nativeObjectType="Hierarchy" objectType="Hierarchy" permissionsRemediationModificationType="None">
          <AttributeDefinition name="HIERARCHY_PK" type="string"/>
          <AttributeDefinition name="HIERARCHY_TYPE" type="string"/>
       </Schema>
-      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="LOGICAL_NAME" identityAttribute="LOGICAL_NAME" instanceAttribute="" nativeObjectType="" objectType="Logical Name" permissionsRemediationModificationType="None" significantModified="1753889150263">
+      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="LOGICAL_NAME" identityAttribute="LOGICAL_NAME" instanceAttribute="" nativeObjectType="" objectType="Logical Name" permissionsRemediationModificationType="None">
          <AttributeDefinition name="HIERARCHY_TYPE" schemaObjectType="Hierarchy" type="string"/>
          <AttributeDefinition name="LOGICAL_NAME" type="string"/>
          <AttributeDefinition name="ROLE" type="string"/>
       </Schema>
-      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="MARKET_NAME" identityAttribute="MARKET_NAME" instanceAttribute="" nativeObjectType="Market" objectType="Market" permissionsRemediationModificationType="None" significantModified="1753889150263">
+      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="MARKET_NAME" identityAttribute="MARKET_NAME" instanceAttribute="" nativeObjectType="Market" objectType="Market" permissionsRemediationModificationType="None">
          <AttributeDefinition name="MARKET_PK" type="string"/>
          <AttributeDefinition name="MARKET_NAME" type="string"/>
       </Schema>
-      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="LOCATION_NAME" identityAttribute="LOCATION_CODE" instanceAttribute="" nativeObjectType="Location" objectType="Location" permissionsRemediationModificationType="None" significantModified="1753889150263">
+      <Schema aggregationType="group" descriptionAttribute="" displayAttribute="LOCATION_NAME" identityAttribute="LOCATION_CODE" instanceAttribute="" nativeObjectType="Location" objectType="Location" permissionsRemediationModificationType="None">
          <AttributeDefinition name="COUNTRY_NAME" type="string"/>
          <AttributeDefinition name="MARKET_NAME" schemaObjectType="Market" type="string"/>
          <AttributeDefinition name="CONCEPT_NAME" schemaObjectType="Concept" type="string"/>
@@ -417,5 +417,5 @@
          <AttributeDefinition name="LOCATION_ACTIVE" type="string"/>
       </Schema>
    </Schemas>
-   <ApplicationScorecard significantModified="1753889150263"/>
+   <ApplicationScorecard/>
 </Application>

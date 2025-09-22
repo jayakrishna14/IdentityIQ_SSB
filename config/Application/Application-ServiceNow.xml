@@ -1,21 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE Application PUBLIC "sailpoint.dtd" "sailpoint.dtd">
-<Application connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="Finance-users" profileClass="" significantModified="1755535709484" type="DelimitedFile">
+<Application authoritative="true" connector="sailpoint.connector.DelimitedFileConnector" featuresString="DIRECT_PERMISSIONS, NO_RANDOM_ACCESS, DISCOVER_SCHEMA" icon="enterpriseIcon" name="%%SERVICE_NOW_USERS_FILE_NAME%%" profileClass=""  type="DelimitedFile">
    <Attributes>
       <Map>
          <entry key="PassphraseForPrivateKey"/>
          <entry key="PrivateKeyFilePath"/>
-         <entry key="acctAggregationEnd">
-            <value>
-               <Date>1755535709476</Date>
-            </value>
-         </entry>
-         <entry key="acctAggregationStart">
-            <value>
-               <Date>1755535704477</Date>
-            </value>
-         </entry>
-         <entry key="afterProvisioningRule"/>
+        <entry key="afterProvisioningRule"/>
          <entry key="aggregationPartitioned">
             <value>
                <Boolean/>
@@ -25,7 +15,7 @@
          <entry key="beforeProvisioningRule"/>
          <entry key="compositeDefinition"/>
          <entry key="delimiter" value=","/>
-         <entry key="file" value="D:\csv_FIles\connectors_CSV\Finance-users.csv"/>
+         <entry key="file" value="%%SERVICE_NOW_USERS_FILE_PATH%%"/>
          <entry key="filetransport" value="local"/>
          <entry key="filterEmptyRecords">
             <value>
@@ -93,16 +83,14 @@
       <Reference class="sailpoint.object.Identity" name="spadmin"/>
    </Owner>
    <Schemas>
-      <Schema displayAttribute="userName" identityAttribute="employeeId" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None" significantModified="1752218398562">
-         <AttributeDefinition name="employeeId" type="string"/>
-         <AttributeDefinition name="dbId" type="string"/>
-         <AttributeDefinition name="app2_privileged" type="string"/>
-         <AttributeDefinition name="acct_lastLogin" type="string"/>
-         <AttributeDefinition name="app2_service" type="string"/>
-         <AttributeDefinition name="app2_inactive" type="string"/>
-         <AttributeDefinition name="groupmbr" type="string"/>
-         <AttributeDefinition name="userName" type="string"/>
+      <Schema displayAttribute="user_name" identityAttribute="user_name" instanceAttribute="" nativeObjectType="account" objectType="account" permissionsRemediationModificationType="None" significantModified="1753463162944">
+         <AttributeDefinition name="user_name" type="string"/>
+         <AttributeDefinition name="name" type="string"/>
+         <AttributeDefinition name="email" type="string"/>
+         <AttributeDefinition name="active" type="string"/>
+         <AttributeDefinition name="sys_created_on" type="string"/>
+         <AttributeDefinition name="sys_updated_on" type="string"/>
       </Schema>
    </Schemas>
-   <ApplicationScorecard significantModified="1752218398562"/>
+   <ApplicationScorecard significantModified="1753463162944"/>
 </Application>
