@@ -31,7 +31,7 @@
         <Filter operation="CONTAINS_ALL" property="memberOf">
           <Value>
             <List>
-              <String>CN=Application support analyst,OU=BusinessGroups,OU=SailPoint,DC=maquarie,DC=com</String>
+              <String>CN=Application support analyst,OU=BusinessGroups,OU=SailPoint,dc=maquarie,dc=com</String>
             </List>
           </Value>
         </Filter>

@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Capability PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Capability displayName="TDBank-AllReports" name="TDBank-AllReports">
+  <RightRefs>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessAccountGroupMembershipReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessApplicationOwnerCertificationReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessApplicationCentricCertificationReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessCertificationDecisionReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessManagerCertificationReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessApplicationActivityReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessMitigationReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessWorkItemReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessApplicationReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessAdvancedCertificationReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessUncorrelatedIdentitiesReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessUserReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessApplicationUserReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessViolationReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessApplicationRiskReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessApplicationStatusReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessIdentityRiskReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessIdentityRoleReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessIdentityEntitlementReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessRemediationProgressReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessBusinessRoleCompositionReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessBusinessRoleReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessBusinessRoleMembershipReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessIdentityApplicationRiskReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessRoleChangeMgmtReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessEntitlementRequestStatusReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessAttributeRequestStatusReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessAccountRequestStatusReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessPasswordManagementReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessCertificationSignoffReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessApplicationAccountAttributesReport"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessTargetedAccessReviewReport"/>
+    <Reference class="sailpoint.object.SPRight" name="AccessTerminatedIdentityMonitoringReport"/>
+  </RightRefs>
+</Capability>

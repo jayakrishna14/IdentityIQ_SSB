@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!DOCTYPE Capability PUBLIC "sailpoint.dtd" "sailpoint.dtd">
+<Capability displayName="TDBank-ApplicationOwner" name="TDBank-ApplicationOwner">
+  <InheritedCapabilities>
+    <Reference class="sailpoint.object.Capability" name="TD - All Reports"/>
+  </InheritedCapabilities>
+  <RightRefs>
+    <Reference class="sailpoint.object.SPRight" name="ViewIdentity"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewPolicy"/>
+    <Reference class="sailpoint.object.SPRight" name="ManagePolicy"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewAccountGroups"/>
+    <Reference class="sailpoint.object.SPRight" name="ManageWorkgroup"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewActivity"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewAuditLog"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewCertifications"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewIdentityRequest"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewLink"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewProcessInstrumentation"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewSyslog"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessIdentityRiskModel"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewApplication"/>
+    <Reference class="sailpoint.object.SPRight" name="ViewApplicationRiskScoreChart"/>
+    <Reference class="sailpoint.object.SPRight" name="ManagedAttributePropertyAdministrator"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessPolicyViolation"/>
+    <Reference class="sailpoint.object.SPRight" name="FullAccessWorkItems"/>
+  </RightRefs>
+</Capability>
